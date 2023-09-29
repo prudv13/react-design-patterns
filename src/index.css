@@ -1,0 +1,9 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
+    width: 89%;
+    gap: 10px;
+    margin: 30px auto 0 auto;
+    overflow-x: hidden;
+    cursor: pointer;
+}

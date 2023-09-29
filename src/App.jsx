@@ -1,8 +1,11 @@
 import React from 'react'
+import LayoutComponent from './design/01-Layout Components/LayoutComponent';
 
 const App = () => {
   return (
-    <div>App</div>
+    <center>
+      <LayoutComponent />
+    </center>
   )
 }
 
