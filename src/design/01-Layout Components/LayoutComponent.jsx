@@ -7,11 +7,12 @@ const LayoutComponent = () => {
   return (
     <div>
       <SplitScreen 
-        left={LeftComponent} 
-        right={RightComponent}
         leftWeight={1}
         rightWeight={3}
-      />
+      >
+        <LeftComponent content='Left' />
+        <RightComponent content='Right' />
+      </SplitScreen>
     </div>
   )
 }

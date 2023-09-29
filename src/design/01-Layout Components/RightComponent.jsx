@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RightComponent = () => {
+const RightComponent = ({content}) => {
   return (
     <div style={{backgroundColor: '#EF9595', padding: '20px'}}>
-        <h1>Right</h1>
+        <h1>{content}</h1>
     </div>
   )
 }
