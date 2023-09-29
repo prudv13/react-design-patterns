@@ -9,6 +9,8 @@ const LayoutComponent = () => {
       <SplitScreen 
         left={LeftComponent} 
         right={RightComponent}
+        leftWeight={1}
+        rightWeight={3}
       />
     </div>
   )
