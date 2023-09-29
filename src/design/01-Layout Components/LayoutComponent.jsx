@@ -10,6 +10,7 @@ import NumberedList from './NumberedList';
 import SmallProductListItem from './products/SmallProductListItem';
 import products from '../../../utils/products';
 import LargeProductListItem from './products/LargeProductListItem';
+import Modal from './Modal/Modal';
 
 const LayoutComponent = () => {
   return (
@@ -21,7 +22,7 @@ const LayoutComponent = () => {
         <LeftComponent content='Left' />
         <RightComponent content='Right' />
       </SplitScreen>
-
+      {/*
       <div>
         <RegularList
           items={people}
@@ -45,6 +46,10 @@ const LayoutComponent = () => {
           itemComponent={LargeProductListItem}
         />
       </div>
+      */}
+      <Modal>
+          <LargeProductListItem product={products[0]} />
+        </Modal>
     </div>
   )
 }
