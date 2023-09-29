@@ -2,7 +2,7 @@ import React from 'react'
 
 const LargePersonListItem = ({person}) => {
   const {name, age, hairColor, hobbies} = person;
-return (
+  return (
   <div className='card p-2'>
     <div className='d-flex flex-column gap-1 form-control mb-2'>
       <span>Name: {name}</span>

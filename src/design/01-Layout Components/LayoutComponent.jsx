@@ -6,6 +6,10 @@ import RegularList from './RegularList';
 import SmallPersonListItem from './people/SmallPersonListItem';
 import people from '../../../utils/people';
 import LargePersonListItem from './people/LargePersonListItem';
+import NumberedList from './NumberedList';
+import SmallProductListItem from './products/SmallProductListItem';
+import products from '../../../utils/products';
+import LargeProductListItem from './products/LargeProductListItem';
 
 const LayoutComponent = () => {
   return (
@@ -28,6 +32,17 @@ const LayoutComponent = () => {
           items={people}
           resourceName="person"
           itemComponent={LargePersonListItem}
+        />
+
+        <NumberedList
+          items={products}
+          resourceName="product"
+          itemComponent={SmallProductListItem}
+        />
+        <NumberedList
+          items={products}
+          resourceName="product"
+          itemComponent={LargeProductListItem}
         />
       </div>
     </div>
