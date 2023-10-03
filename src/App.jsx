@@ -4,10 +4,11 @@ import UncontrolledForm from './design/02-Controlled-Uncontrolled/UncontrolledFo
 import ControlledForm from './design/02-Controlled-Uncontrolled/ControlledForm';
 import UncontrolledModal from './design/02-Controlled-Uncontrolled/UncontrolledModal';
 import ControlledModal from './design/02-Controlled-Uncontrolled/ControlledModal';
+import Modals from './design/02-Controlled-Uncontrolled/Modals';
+import AuthChecked from './design/03-Higher-Order-Component/Hoc';
 
 const App = () => {
 
-  const [shouldShowModal, setShouldShowModal] = useState(false);
   return (
     <center>
       {/* <LayoutComponent /> */}
@@ -18,18 +19,9 @@ const App = () => {
         <p>This is Uncontrolled Modal</p>
         </UncontrolledModal> */}
       
-      <button 
-        className='btn btn-dark my-4' 
-        onClick={() => setShouldShowModal(!shouldShowModal)}
-      >
-      {shouldShowModal ? 'Hide Modal' : 'Show Modal'}
-      </button>
-      <ControlledModal 
-        shouldShow={shouldShowModal}
-        onRequestClose={() => setShouldShowModal(false)}
-      >
-        <p>This is Controlled Modal</p>
-      </ControlledModal>
+      {/* <Modals /> */}
+
+      <AuthChecked username='Jamie' />
     </center>
   )
 }
